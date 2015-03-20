@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811E52741ABCA31200825ABF /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E52731ABCA31200825ABF /* Detail.m */; };
 		81B5EA7F1ABB63AA00CF0254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5EA7E1ABB63AA00CF0254 /* main.m */; };
 		81B5EA821ABB63AA00CF0254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5EA811ABB63AA00CF0254 /* AppDelegate.m */; };
 		81B5EA851ABB63AA00CF0254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5EA841ABB63AA00CF0254 /* ViewController.m */; };
@@ -14,6 +15,12 @@
 		81B5EA8A1ABB63AA00CF0254 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B5EA891ABB63AA00CF0254 /* Images.xcassets */; };
 		81B5EA8D1ABB63AA00CF0254 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81B5EA8B1ABB63AA00CF0254 /* LaunchScreen.xib */; };
 		81B5EA991ABB63AA00CF0254 /* iDribbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5EA981ABB63AA00CF0254 /* iDribbleTests.m */; };
+		81D047601ABBB9AA0033C4ED /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D0475F1ABBB9AA0033C4ED /* Download.m */; };
+		81D047631ABBBCC20033C4ED /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D047621ABBBCC20033C4ED /* Shot.m */; };
+		81E89D411ABC5BD300A1963C /* ShotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E89D401ABC5BD300A1963C /* ShotTableViewCell.m */; };
+		81E89D441ABC63F200A1963C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E89D431ABC63F200A1963C /* Utils.m */; };
+		81E89D471ABC7D3D00A1963C /* DetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E89D461ABC7D3D00A1963C /* DetalheViewController.m */; };
+		CB8187CA1968ABA6316F898F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A39A5711EEFAE7DF37C8E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1595AC47C78BCAA574C1A3CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		249A39A5711EEFAE7DF37C8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		811E52721ABCA31200825ABF /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		811E52731ABCA31200825ABF /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 		81B5EA791ABB63AA00CF0254 /* iDribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B5EA7D1ABB63AA00CF0254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81B5EA7E1ABB63AA00CF0254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +51,17 @@
 		81B5EA921ABB63AA00CF0254 /* iDribbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDribbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B5EA971ABB63AA00CF0254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81B5EA981ABB63AA00CF0254 /* iDribbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDribbleTests.m; sourceTree = "<group>"; };
+		81D0475E1ABBB9AA0033C4ED /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
+		81D0475F1ABBB9AA0033C4ED /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
+		81D047611ABBBCC20033C4ED /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
+		81D047621ABBBCC20033C4ED /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
+		81E89D3F1ABC5BD300A1963C /* ShotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotTableViewCell.h; sourceTree = "<group>"; };
+		81E89D401ABC5BD300A1963C /* ShotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotTableViewCell.m; sourceTree = "<group>"; };
+		81E89D421ABC63F200A1963C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		81E89D431ABC63F200A1963C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		81E89D451ABC7D3D00A1963C /* DetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalheViewController.h; sourceTree = "<group>"; };
+		81E89D461ABC7D3D00A1963C /* DetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalheViewController.m; sourceTree = "<group>"; };
+		B1A959B9E5D9312ED478C052 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8187CA1968ABA6316F898F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6234CF1BAC66C4E930E6AE80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1A959B9E5D9312ED478C052 /* Pods.debug.xcconfig */,
+				1595AC47C78BCAA574C1A3CB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D9A8D0817F4039E13E32CB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				249A39A5711EEFAE7DF37C8E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		81B5EA701ABB63AA00CF0254 = {
 			isa = PBXGroup;
 			children = (
 				81B5EA7B1ABB63AA00CF0254 /* iDribble */,
 				81B5EA951ABB63AA00CF0254 /* iDribbleTests */,
 				81B5EA7A1ABB63AA00CF0254 /* Products */,
+				6234CF1BAC66C4E930E6AE80 /* Pods */,
+				7D9A8D0817F4039E13E32CB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +123,14 @@
 		81B5EA7B1ABB63AA00CF0254 /* iDribble */ = {
 			isa = PBXGroup;
 			children = (
+				81D0475A1ABBB8060033C4ED /* Objects */,
+				81D047591ABBB7FB0033C4ED /* Helpers */,
 				81B5EA801ABB63AA00CF0254 /* AppDelegate.h */,
 				81B5EA811ABB63AA00CF0254 /* AppDelegate.m */,
 				81B5EA831ABB63AA00CF0254 /* ViewController.h */,
 				81B5EA841ABB63AA00CF0254 /* ViewController.m */,
+				81E89D451ABC7D3D00A1963C /* DetalheViewController.h */,
+				81E89D461ABC7D3D00A1963C /* DetalheViewController.m */,
 				81B5EA861ABB63AA00CF0254 /* Main.storyboard */,
 				81B5EA891ABB63AA00CF0254 /* Images.xcassets */,
 				81B5EA8B1ABB63AA00CF0254 /* LaunchScreen.xib */,
@@ -119,6 +165,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		81D047591ABBB7FB0033C4ED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81D0475E1ABBB9AA0033C4ED /* Download.h */,
+				81D0475F1ABBB9AA0033C4ED /* Download.m */,
+				81E89D421ABC63F200A1963C /* Utils.h */,
+				81E89D431ABC63F200A1963C /* Utils.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		81D0475A1ABBB8060033C4ED /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				81D047611ABBBCC20033C4ED /* Shot.h */,
+				81D047621ABBBCC20033C4ED /* Shot.m */,
+				81E89D3F1ABC5BD300A1963C /* ShotTableViewCell.h */,
+				81E89D401ABC5BD300A1963C /* ShotTableViewCell.m */,
+				811E52721ABCA31200825ABF /* Detail.h */,
+				811E52731ABCA31200825ABF /* Detail.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81B5EA9C1ABB63AA00CF0254 /* Build configuration list for PBXNativeTarget "iDribble" */;
 			buildPhases = (
+				287FD054E467776E726CACD7 /* Check Pods Manifest.lock */,
 				81B5EA751ABB63AA00CF0254 /* Sources */,
 				81B5EA761ABB63AA00CF0254 /* Frameworks */,
 				81B5EA771ABB63AA00CF0254 /* Resources */,
+				7E8B005DD06D2B44FA477B87 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +286,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		287FD054E467776E726CACD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E8B005DD06D2B44FA477B87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81B5EA751ABB63AA00CF0254 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E89D471ABC7D3D00A1963C /* DetalheViewController.m in Sources */,
+				81D047631ABBBCC20033C4ED /* Shot.m in Sources */,
+				811E52741ABCA31200825ABF /* Detail.m in Sources */,
 				81B5EA851ABB63AA00CF0254 /* ViewController.m in Sources */,
+				81D047601ABBB9AA0033C4ED /* Download.m in Sources */,
 				81B5EA821ABB63AA00CF0254 /* AppDelegate.m in Sources */,
 				81B5EA7F1ABB63AA00CF0254 /* main.m in Sources */,
+				81E89D441ABC63F200A1963C /* Utils.m in Sources */,
+				81E89D411ABC5BD300A1963C /* ShotTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +454,11 @@
 		};
 		81B5EA9D1ABB63AA00CF0254 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A959B9E5D9312ED478C052 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iDribble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,9 +466,11 @@
 		};
 		81B5EA9E1ABB63AA00CF0254 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1595AC47C78BCAA574C1A3CB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iDribble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +529,7 @@
 				81B5EA9E1ABB63AA00CF0254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81B5EA9F1ABB63AA00CF0254 /* Build configuration list for PBXNativeTarget "iDribbleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +538,7 @@
 				81B5EAA11ABB63AA00CF0254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
