@@ -35,7 +35,7 @@
 {
     
     //Colocar a URL e o Token no define.h do aplicativo
-    NSString *stringUrl = @"http://api.dribbble.com/v1/shots/?list=0&access_token=7ad95864feb428f21b6c5e584fec351222b259fbb818a92907aea36d13de3d7a&page=0&per_page=30";
+    NSString *stringUrl = @"http://api.dribbble.com/v1/shots/?access_token=7ad95864feb428f21b6c5e584fec351222b259fbb818a92907aea36d13de3d7a&page=0&per_page=30";
 
     arrayShots = [[NSArray alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
