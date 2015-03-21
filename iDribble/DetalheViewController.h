@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetalheViewController : UIViewController
+@interface DetalheViewController : UIViewController <UIWebViewDelegate>
 {
     
     __weak IBOutlet UIImageView *imageViewShot;
-    __weak IBOutlet UILabel *labelDescription;
+    __weak IBOutlet UIWebView *webViewDescription;
     __weak IBOutlet UILabel *labelViews_Count;
     __weak IBOutlet UILabel *labelComments_Count;
     __weak IBOutlet UILabel *labelCreated_At;

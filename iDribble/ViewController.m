@@ -7,13 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "Download.h"
-#import <AFNetworking.h>
+#import "Define.h"
 #import "Shot.h"
-#import "MBProgressHUD.h"
 #import "ShotTableViewCell.h"
-#import "Utils.h"
-#import <UIImageView+AFNetworking.h>
 #import "DetalheViewController.h"
 
 @interface ViewController ()
@@ -26,20 +22,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+    [_tableViewPrincipal addSubview:refreshControl];
+    
     self.title = @"Home";
     [self refreshData];
 }
 
 - (void)refreshData
 {
-    
-    //Colocar a URL e o Token no define.h do aplicativo
-    NSString *stringUrl = @"http://api.dribbble.com/v1/shots/?access_token=7ad95864feb428f21b6c5e584fec351222b259fbb818a92907aea36d13de3d7a&page=0&per_page=30";
+    NSString *stringUrl = [NSString stringWithFormat:@"%@%@%@", URLShots, URLToken, URLShotsSulfix];
 
     arrayShots = [[NSArray alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
     [Download downloadWithUrl:stringUrl callback:^(BOOL success, id result)
     {
         if (success)
@@ -47,11 +44,28 @@
         
         else
         {
-            //Colocar alerta de erro
+            UIAlertController * alerta =   [UIAlertController
+                                            alertControllerWithTitle:@"Erro"
+                                            message:result
+                                            preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* ok = [UIAlertAction
+                                 actionWithTitle:@"OK"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [alerta dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+            
+            [alerta addAction:ok];
+            
+            [self presentViewController:alerta animated:YES completion:nil];
         }
         
         [_tableViewPrincipal reloadData];
         [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [refreshControl endRefreshing];
     }];
 }
 
@@ -75,6 +89,10 @@
     cell.labelTitle.text = shot.title;
     cell.labelViews_Count.text = stringViews;
     cell.labelCreated_At.text = [Utils stringDate:shot.create_At];
+    
+    [cell.imageViewShot setImageWithURL:nil placeholderImage:nil];
+
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     NSURL *url = [NSURL URLWithString:[shot.images objectForKey:@"teaser"]];
     [cell.imageViewShot setImageWithURL:url placeholderImage:nil];

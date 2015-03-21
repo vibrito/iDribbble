@@ -12,6 +12,7 @@
 {
     NSArray *arrayShots;
     NSInteger intIndex;
+    UIRefreshControl *refreshControl;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewPrincipal;

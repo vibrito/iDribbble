@@ -10,11 +10,10 @@
 #import "Shot.h"
 #import "Detail.h"
 
-@interface Utils : NSObject
+@interface Utils : NSObject 
 
 + (NSArray *)criaObjetos : (NSArray *) arrayJson;
 + (Detail *)criaObjetosDetalhes : (NSDictionary *) dictJson;
-
 + (NSString *)stringDate : (NSString *) date;
 
 @end

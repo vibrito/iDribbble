@@ -7,11 +7,7 @@
 //
 
 #import "DetalheViewController.h"
-#import <AFNetworking.h>
-#import "Download.h"
-#import "MBProgressHUD.h"
-#import "Utils.h"
-#import <UIImageView+AFNetworking.h>
+#import "Define.h"
 #import "Detail.h"
 
 @interface DetalheViewController ()
@@ -25,16 +21,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //Colocar a URL e o Token no define.h do aplicativo
-    NSString *stringUrl = [NSString stringWithFormat:@"https://api.dribbble.com/v1/shots/%@/?access_token=7ad95864feb428f21b6c5e584fec351222b259fbb818a92907aea36d13de3d7a", _stringId];
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    NSString *stringUrl = [NSString stringWithFormat:@"%@%@/?access_token=%@",URLGetShots, _stringId, URLToken];
     [Download downloadWithUrl:stringUrl callback:^(BOOL success, id result)
      {
          if (success)
          {
              Detail *detail = [Utils criaObjetosDetalhes:result];
              self.title = detail.title;
-             labelDescription.text = detail.descriptionString;
+             [webViewDescription loadHTMLString:detail.descriptionString baseURL:nil];
             
              labelCreated_At.text = [Utils stringDate:detail.created_at];
              
@@ -48,7 +42,23 @@
          
          else
          {
-             //Colocar alerta de erro
+             UIAlertController * alerta =   [UIAlertController
+                                           alertControllerWithTitle:@"Erro"
+                                           message:result
+                                           preferredStyle:UIAlertControllerStyleAlert];
+             
+             UIAlertAction* ok = [UIAlertAction
+                                  actionWithTitle:@"OK"
+                                  style:UIAlertActionStyleDefault
+                                  handler:^(UIAlertAction * action)
+                                  {
+                                      [alerta dismissViewControllerAnimated:YES completion:nil];
+                                      
+                                  }];
+             
+             [alerta addAction:ok];
+             
+             [self presentViewController:alerta animated:YES completion:nil];
          }
          
          [MBProgressHUD hideHUDForView:self.view animated:YES];
